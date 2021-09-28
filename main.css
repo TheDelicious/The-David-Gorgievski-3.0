@@ -420,6 +420,16 @@ hr{
         margin: 0px 15px;
         margin-top: 10px;
     }
+
+    .Stickman{
+        margin-right: -20px;
+    }
+
+    .Treasure {
+        margin-left: -190px;
+        padding-left: 50px;
+    }
+
 }
 
 
