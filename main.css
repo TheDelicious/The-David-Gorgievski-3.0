@@ -1,0 +1,929 @@
+* {
+    scroll-behavior:smooth;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: dimgrey; */
+    background-image: url('./Sliki/pozadina.jpg');
+    background-size: contain;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+
+/* Navbar container --------------------------------------------------------------------------------------------------------------------- */
+
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: black;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    transition: ease-out 0.5s;
+    box-shadow: inset -80px 0 0 0 #a31a1a;
+    background-color: #a31a1a;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #a31a1a;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 500px){
+    .navbar{
+        display: none;
+    }
+    .More{
+        display: none;
+    }
+   header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+   }
+}
+
+.Logo{
+    font-size: 1.5rem;
+}
+.More{
+    font-size: 1.2rem;
+    margin-right: 20px;  
+}
+
+/* MAIN */
+
+/* Intro -----------------------------------------------------------------------------------------------------------------------------------*/
+
+.introPhoneC{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.introPhone{
+    display: none;  
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    height: 86vh;
+    margin-bottom: -1px;
+}
+
+#IntroPhone{
+    width: 105%;
+    height: 86vh;
+    margin-top: -1px;
+    object-fit: cover;
+}
+
+.dotsintro{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: -1.2rem;
+    color: white;
+    
+}
+
+.dotIntro{
+    border: 2px solid red;
+    color: white;
+    margin-top: -10px;
+}
+
+#dotIntro1{
+    background-color: #a31a1a;
+    border-radius: 50%;
+}
+
+.dotsintro{
+    display: none;
+}
+.introPhone img{
+    margin: 0px -3rem;
+}
+
+#BackArrowIntro, #NextArrowIntro{
+    z-index: 2;
+    color: white;
+    opacity: 1;
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
+}
+
+#BackArrowIntro:active{
+    transform: translate(-2px, 2px);
+}
+
+#NextArrowIntro:active{
+    transform: translate(2px, 2px);
+}
+
+.middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 98.9vw;
+}
+
+.middle1{
+    background: url("./Sliki/Industriska1.jpg") no-repeat;
+    height: 89vh;
+    width: 24.725vw;
+    background-size: cover;
+}
+.middle2{
+    background: url("./Sliki/Pica1.jpg") no-repeat;
+     height: 89vh;
+    width: 24.725vw;
+    background-size: cover;
+}
+.middle3{
+    background: url("./Sliki/Sandanski1.jpg") no-repeat;
+     height: 89vh;
+    width: 24.725vw;
+    background-size: cover;
+}
+.middle4{
+    background: url("./Sliki/Kamnik1.jpg") no-repeat;
+     height: 89vh;
+    width: 24.725vw;
+    background-size: cover;
+}
+
+.middle1:hover{
+    background: url("./Sliki/Industriska2.jpg") no-repeat;
+    background-size: cover;
+}
+.middle2:hover{
+    background: url("./Sliki/Pica2.jpg") no-repeat;
+    background-size: cover;
+}
+.middle3:hover{
+    background: url("./Sliki/Sandanski2.jpg") no-repeat;
+    background-size: cover;
+}
+
+.middle4:hover{
+    background: url("./Sliki/Kamnik2.jpg") no-repeat;
+    background-size: cover;
+}
+
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+hr{
+    height: 5px;
+    background-color: black;
+    border: none;
+    width: 60vw;
+}
+
+@media (max-width: 500px){
+    .intro{
+        display: none;
+    }
+    .introPhone{
+        display: flex;
+    }
+    
+    .dotsintro{
+        display: block;
+    }
+}
+
+/* Introduction --------------------------------------------------------------------------------------------------------------------- */
+
+.introduction{
+    text-align: center;
+    margin-bottom: 80px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 0px;
+}
+.introduction p{
+    color: black;
+}
+
+.sexaddict{
+    font-size: 2rem;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+
+.sexaddict:hover{
+    transform: scaleX(-1);
+    transition: ease-out 1s;
+
+}
+
+/* Music --------------------------------------------------------------------------------------------------------------------- */
+.Musik{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.MusikBorder{
+    border: 5px solid black;
+    border-radius: 5%;
+     width: 338px;
+    height: 450px;
+}
+
+.MusikLeft {
+    background: url("./Sliki/Kocani2.jpg");
+    width: 340px;
+    height: 453px;
+    background-size: cover;
+    border-radius: 5%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px, rgba(10, 37, 64, 0.55) 0px -2px 6px 0px inset;
+
+}
+.MusikLeft:hover{
+    background: url("./Sliki/Kocani1.jpg");
+    width: 340px;
+    height: 453px;
+    animation: Guitar 0.5s 1;
+    background-size: cover;
+    border-radius: 5%;
+}
+
+@keyframes Guitar{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.50;
+    }   
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.MusikRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.MusikRight p{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.MusikText{
+    background-color: rgba(255,255,255,0.6); 
+    padding: 0px 5px;   
+    border: 2px solid black;
+    border-radius: 5%;
+    cursor: default;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px, rgba(10, 37, 64, 0.55) 0px -2px 6px 0px inset;
+}
+
+.MusikRightL
+{
+    align-items: flex-end;
+    text-align: end;
+    margin-top: -40px;
+    margin-bottom: 40px;
+}
+
+.MusikRightL img{
+    width: 180px;
+    margin-top: 20px;
+}
+
+.Stickman{
+    margin-right: 0px;
+    margin-top: 50px;
+}
+
+.Treasure {
+    margin-bottom: 180px;
+    margin-left: -180px;
+    opacity: 0;
+    padding-left: 80px;
+    margin-top: 0px;
+}
+
+.Treasure:hover{
+    transform: translateX(20%);
+    opacity: 1;
+}
+
+@media (max-width: 500px){
+    
+    .Musik{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .MusikLeft{
+        justify-self: center;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .MusikText{
+        margin: 0px 15px;
+        margin-top: 10px;
+    }
+}
+
+
+/* Travel --------------------------------------------------------------------------------------------------------------------- */
+
+.TravelPhone{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.TravelPhoneP{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.TravelPhoneP img{
+    width: 95%;
+    object-fit: cover;
+    margin: 0px -2.5rem;
+    border-radius: 5%;
+    border: 2px solid black;
+    margin-bottom: -2rem;
+}
+
+#BackArrowTravel, #NextArrowTravel{
+    z-index: 2;
+    color: white;
+    opacity: 1;
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
+}
+
+#BackArrowTravel:active{
+    transform: translate(-2px, 2px);
+}
+
+#NextArrowTravel:active{
+    transform: translate(2px, 2px);
+}
+
+#dotTravelPhone1{
+    background-color: #a31a1a;
+    border-radius: 50%;
+}
+.Travel p{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.TravelB{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+
+}
+
+.TravelL{
+    margin-top: 150px;
+    text-align: center;
+    
+}
+
+.BackButton{
+    width: 250px;
+    height: 80px;
+    color: white;
+    background-color: black;
+    border-radius: 7%;
+    box-shadow: inset 0 0 0 0 #a31a1a;
+    transition: ease-out 0.5s;
+    font-size: 2rem;
+    outline: none;
+}
+
+.BackButton:hover {
+    box-shadow: inset -300px 0 0 0 #a31a1a;
+    word-spacing: 10px;
+    cursor: pointer;
+}
+
+.BackButton:active{
+     opacity: 1;
+    transform: translate(-4px ,-4px);
+}
+
+.TravelM img{
+    border: 8px solid black;
+    border-radius: 5%;
+    margin-bottom: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px, rgba(10, 37, 64, 0.55) 0px -2px 6px 0px inset;
+}
+
+.TravelR{
+    margin-top: 150px;
+}
+
+.NextButton{
+    width: 250px;
+    height: 80px;
+    color: white;
+    background-color: black;
+    border-radius: 7%;
+    box-shadow: inset 0 0 0 0 #a31a1a;
+    transition: ease-out 0.5s;
+    font-size: 2rem;
+    outline: none;
+}
+
+.NextButton:hover{
+    box-shadow: inset 300px 0 0 0 #a31a1a;
+    word-spacing: 10px;
+    cursor: pointer;
+}
+
+.NextButton:active{
+    opacity: 1;
+    transform: translate(4px ,-4px);    
+}
+
+.dotsT{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+.dot{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#dotPraga:hover, #dotVenecija:hover, #dotCupino:hover{
+     background-color: #a31a1a;
+    border-radius: 50%;
+}
+
+#dotPraga{
+    background-color: #a31a1a;
+    border-radius: 50%;
+}
+
+.agilaA{
+    display: flex;
+    text-align: end;
+    justify-content: end;
+    transform: scaleX(-1);
+}
+.agila{
+    margin-right: -80px;
+    animation: Agila 20s infinite;
+}
+
+@keyframes Agila{
+    0% {
+      transform: translateX(-140vw);
+   }
+   100% {
+    transform: translateX(10vw);
+   }
+}
+
+@media (max-width: 500px){
+    
+    .Travel{
+        display: none;
+    }
+    .TravelPhone{
+        display: block;
+    }
+}
+
+/* Social life -------------------------------------------------------------------------------------------------------------------- */
+
+.SocialLifePhone{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.SocialLifePhoneP{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.SocialLifePhoneP img{
+    width: 95%;
+    object-fit: cover;
+    margin: 0px -2.5rem;
+    border-radius: 5%;
+    border: 2px solid black;
+    margin-bottom: -2rem;
+}
+
+#BackArrowSocialLife, #NextArrowSocialLife{
+    z-index: 2;
+    color: white;
+    opacity: 1;
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
+}
+
+#BackArrowSocialLife:active{
+    transform: translate(-2px, 2px);
+}
+
+#NextArrowSocialLife:active{
+    transform: translate(2px, 2px);
+}
+
+#dotSocialLifePhone1{
+    background-color: #a31a1a;
+    border-radius: 50%;
+}
+
+
+
+.SocialLife p{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.SocialLifeB{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.SocialLifeM img{
+    border: 8px solid black;
+    border-radius: 5%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px, rgba(10, 37, 64, 0.55) 0px -2px 6px 0px inset;
+}
+
+#dotSlika1:hover, #dotSlika2:hover,#dotSlika3:hover, #dotSlika4:hover{
+    background-color: #a31a1a;
+    border-radius: 50%;
+}
+
+#dotSlika1{
+    background-color: #a31a1a;
+    border-radius: 50%;
+}
+
+@media (max-width: 500px){
+    
+    .SocialLife{
+        display: none;
+    }
+    .SocialLifePhone{
+        display: block;
+    }
+}
+
+
+/* Career ---------------------------------------------------------------------------------------------------------------------------- */
+
+.CareerPhone{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Career{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.CareerLeft p{
+    font-size: 1.3rem;
+}
+
+.CareerLeftT{
+    background-color: rgba(255,255,255,0.6); 
+    padding: 0px 5px;   
+    border: 2px solid black;
+    border-radius: 5%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px, rgba(10, 37, 64, 0.55) 0px -2px 6px 0px inset;
+}
+
+/* .CareerLeftT:hover{
+    background-color: rgba(255,255,255,0.6); 
+} */
+
+.CareerLeftB{
+    text-align: end;
+    margin-right: 30px;
+    margin-top: -30px;
+}
+
+#party{
+    margin-bottom: 100px;
+    margin-left: -100px;
+    padding-left: 50px;
+    opacity: 0;
+}   
+#party:hover{
+    opacity: 1;
+}
+
+.CareerRight{
+    background: url('./Sliki/roza.jpg') no-repeat;
+    height: 380px;
+    width: 245px;
+    border: 5px solid black;
+    border-radius: 5%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px, rgba(10, 37, 64, 0.55) 0px -2px 6px 0px inset;
+}
+
+.CareerRight:hover{
+    background: url('./Sliki/halfsober.jpg') no-repeat;
+    height: 380px;
+    width: 245px;
+    border: 5px solid black;
+    border-radius: 5%;
+    animation: Boobs 0.5s 1;
+    transform: translateX( 0.8%);
+}
+
+@keyframes Boobs{
+    0%{
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    25%{
+        transform: translateX( 0.2%);
+        opacity: 0.25;
+    }
+    50%{
+        transform: translateX( 0.4%);
+        opacity: 0.50;
+    }   
+    75%{
+        transform: translateX( 0.6%);
+        opacity: 0.75;
+    }
+    100%{
+        transform: translateX( 0.8%);
+        opacity: 1;
+    }
+}
+
+.CareerRight:active{
+    background: url('./Sliki/Love.jpg') no-repeat;
+    height: 380px;
+    width: 245px;
+    border: 5px solid black;
+    border-radius: 5%;
+    transform: translateX(0.8%);
+
+}
+
+@media (max-width: 500px){
+    
+    .Career{
+        display: none;
+    }
+    .CareerPhone{
+        display: block;
+    }
+
+    .CareerRight{
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .CareerLeftT{
+        margin: 0px 15px;
+    }
+}
+
+/* The End ----------------------------------------------------------------------------------------------------------------------------- */
+
+.TheEnd {
+    align-items: center;
+    border-radius: 5%;
+    border: 5px solid black;
+    background: url('./Sliki/Pickinoezero3.jpg');
+    width: 775px;
+    height: 514px;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 70px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px, rgba(10, 37, 64, 0.55) 0px -2px 6px 0px inset;
+}
+
+.TheEnd:hover
+{
+    background: url('./Sliki/Pickinoezero2.jpg');
+    transition: ease-out 2.3s;
+    
+}
+
+@media (max-width: 500px){
+    
+    .TheEnd{
+        background: url('./Sliki/Pickinoezero3mobile.jpg') no-repeat;
+        width: 95%;
+        height: 312px;
+    }
+
+    .TheEnd:hover
+{
+    background: url('./Sliki/Pickinoezero2Mobile.jpg');
+    transition: ease-out 2.3s;
+    
+}
+}
+
+
+/* Footer ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.Home
+{
+    display: flex;
+    padding-right: 5px;
+}
+
+.Home a{
+    margin-left: 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    align-items: center;
+    text-align:center;
+    padding-right: 5px;
+}
+
+.Home:hover{
+    background-color: #a31a1a;
+    box-shadow: inset -80px 0 0 0 #a31a1a;
+    transition: ease-out 0.5s;
+}
+
+.Contact{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.Contact i{
+    margin-left: 13px;
+}
+
+.LogoD{
+    margin-right: -30px;
+}
+
+#instagram{
+    color: white;
+}
+#instagram:hover{
+    color: red;
+    transition: ease-out 0.8s;
+}
+
+#facebook{
+    color: white;
+}
+
+#facebook:hover{
+    color: blue;
+    transition: ease-out 0.8s;
+
+}
+
+#yahoo{
+    color: white;
+
+}
+#yahoo:hover{
+    color: #990099;
+    transition: ease-out 0.8s;
+
+
+}
+
+
