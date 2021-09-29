@@ -9,7 +9,6 @@ html {
 body{
     margin: 0;
     padding: 0;
-    /* background-color: dimgrey; */
     background-image: url('./Sliki/pozadina.jpg');
     background-size: contain;
     width: 100vw;
@@ -26,7 +25,6 @@ header{
     padding: 0;
     width: 100vw;
 }
-
 
 /* Navbar container --------------------------------------------------------------------------------------------------------------------- */
 
@@ -156,7 +154,6 @@ header{
     align-items: center;
     margin-top: -1.2rem;
     color: white;
-    
 }
 
 .dotIntro{
@@ -297,143 +294,6 @@ hr{
 
 }
 
-/* Music --------------------------------------------------------------------------------------------------------------------- */
-.Musik{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
-}
-
-.MusikBorder{
-    border: 5px solid black;
-    border-radius: 5%;
-     width: 338px;
-    height: 450px;
-}
-
-.MusikLeft {
-    background: url("./Sliki/Kocani2.jpg");
-    width: 340px;
-    height: 453px;
-    background-size: cover;
-    border-radius: 5%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px, rgba(10, 37, 64, 0.55) 0px -2px 6px 0px inset;
-
-}
-.MusikLeft:hover{
-    background: url("./Sliki/Kocani1.jpg");
-    width: 340px;
-    height: 453px;
-    animation: Guitar 0.5s 1;
-    background-size: cover;
-    border-radius: 5%;
-}
-
-@keyframes Guitar{
-    0%{
-        opacity: 0;
-    }
-    25%{
-        opacity: 0.25;
-    }
-    50%{
-        opacity: 0.50;
-    }   
-    75%{
-        opacity: 0.75;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-.MusikRight{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.MusikRight p{
-    font-size: 1.2rem;
-    color: black;
-}
-
-.MusikText{
-    background-color: rgba(255,255,255,0.6); 
-    padding: 0px 5px;   
-    border: 2px solid black;
-    border-radius: 5%;
-    cursor: default;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px, rgba(10, 37, 64, 0.55) 0px -2px 6px 0px inset;
-}
-
-.MusikRightL
-{
-    align-items: flex-end;
-    text-align: end;
-    margin-top: -40px;
-    margin-bottom: 40px;
-}
-
-.MusikRightL img{
-    width: 180px;
-    margin-top: 20px;
-}
-
-.Stickman{
-    margin-right: 0px;
-    margin-top: 50px;
-}
-
-.Treasure {
-    margin-bottom: 180px;
-    margin-left: -180px;
-    opacity: 0;
-    padding-left: 80px;
-    margin-top: 0px;
-}
-
-.Treasure:hover{
-    transform: translateX(20%);
-    opacity: 1;
-}
-
-@media (max-width: 500px){
-    
-    .Musik{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .MusikLeft{
-        justify-self: center;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .MusikText{
-        margin: 0px 15px;
-        margin-top: 10px;
-    }
-
-    .Stickman{
-        margin-right: -20px;
-    }
-
-    .Treasure {
-        margin-left: -190px;
-        padding-left: 50px;
-    }
-
-    .MusikRightL img{
-    width: 150px;
-    }
-}
 
 
 /* Travel --------------------------------------------------------------------------------------------------------------------- */
@@ -613,6 +473,144 @@ hr{
     }
 }
 
+/* Music --------------------------------------------------------------------------------------------------------------------- */
+.Musik{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.MusikBorder{
+    border: 5px solid black;
+    border-radius: 5%;
+     width: 338px;
+    height: 450px;
+}
+
+.MusikLeft {
+    background: url("./Sliki/Kocani2.jpg");
+    width: 340px;
+    height: 453px;
+    background-size: cover;
+    border-radius: 5%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px, rgba(10, 37, 64, 0.55) 0px -2px 6px 0px inset;
+
+}
+.MusikLeft:hover{
+    background: url("./Sliki/Kocani1.jpg");
+    width: 340px;
+    height: 453px;
+    animation: Guitar 0.5s 1;
+    background-size: cover;
+    border-radius: 5%;
+}
+
+@keyframes Guitar{
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.50;
+    }   
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.MusikRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.MusikRight p{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.MusikText{
+    background-color: rgba(255,255,255,0.6); 
+    padding: 0px 5px;   
+    border: 2px solid black;
+    border-radius: 5%;
+    cursor: default;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px, rgba(10, 37, 64, 0.55) 0px -2px 6px 0px inset;
+}
+
+.MusikRightL
+{
+    align-items: flex-end;
+    text-align: end;
+    margin-top: -40px;
+    margin-bottom: 40px;
+}
+
+.MusikRightL img{
+    width: 180px;
+    margin-top: 20px;
+}
+
+.Stickman{
+    margin-right: 0px;
+    margin-top: 50px;
+}
+
+.Treasure {
+    margin-bottom: 180px;
+    margin-left: -180px;
+    opacity: 0;
+    padding-left: 80px;
+    margin-top: 0px;
+}
+
+.Treasure:hover{
+    transform: translateX(20%);
+    opacity: 1;
+}
+
+@media (max-width: 500px){
+    
+    .Musik{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .MusikLeft{
+        justify-self: center;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .MusikText{
+        margin: 0px 15px;
+        margin-top: 10px;
+    }
+
+    .Stickman{
+        margin-right: -20px;
+    }
+
+    .Treasure {
+        margin-left: -190px;
+        padding-left: 50px;
+    }
+
+    .MusikRightL img{
+    width: 150px;
+    }
+}
+
 /* Social life -------------------------------------------------------------------------------------------------------------------- */
 
 .SocialLifePhone{
@@ -661,8 +659,6 @@ hr{
     border-radius: 50%;
 }
 
-
-
 .SocialLife p{
     text-align: center;
     font-size: 1.3rem;
@@ -701,7 +697,6 @@ hr{
     }
 }
 
-
 /* Career ---------------------------------------------------------------------------------------------------------------------------- */
 
 .CareerPhone{
@@ -727,10 +722,6 @@ hr{
     border-radius: 5%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px, rgba(10, 37, 64, 0.55) 0px -2px 6px 0px inset;
 }
-
-/* .CareerLeftT:hover{
-    background-color: rgba(255,255,255,0.6); 
-} */
 
 .CareerLeftB{
     text-align: end;
@@ -851,11 +842,10 @@ hr{
     }
 
     .TheEnd:hover
-{
-    background: url('./Sliki/Pickinoezero2Mobile.jpg');
-    transition: ease-out 2.3s;
-    
-}
+    {
+     background: url('./Sliki/Pickinoezero2Mobile.jpg');
+     transition: ease-out 2.3s;
+    }
 }
 
 
@@ -936,8 +926,6 @@ footer{
 #yahoo:hover{
     color: #990099;
     transition: ease-out 0.8s;
-
-
 }
 
-
+/* --------------------------------------------------------------------------------------------------------------------------------- */
